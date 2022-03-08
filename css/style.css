@@ -1,0 +1,286 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin:0;
+  padding:0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.top{
+  background-image: url("./first\ picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.top nav a, .order a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.top nav a:hover, .order a:hover{
+  color: rgb(255, 136, 0);
+}
+.top nav ul{
+  margin:0;
+  padding: 39px 0 20px 922px;
+  font-size: 15px;
+}
+.top li, .order li{
+  display: inline-block;
+  padding: 0 26px 10px 26px;
+  font-family: 'Roboto', sans-serif;
+}
+.topcontent li {
+  padding-left: 0;
+}
+.top, .topcontent{
+  float: left;
+}
+.topcontent *{
+  margin: 0;
+}
+.topcontent {
+  margin-left: 80px;
+  width: 55%;
+}
+.topcontent h1{
+  font-size: 135px;
+  line-height: 0.95;
+  padding: 85px 0 30px 0;
+}
+.topcontent ul{
+  padding: 50px 60px 0 0; 
+}
+.topcontent li{
+  padding-right:130px;
+}
+.topcontent ul a, span{
+  font-size: 20px;
+}
+.topcontent span{
+  font-weight: 600;
+}
+.form{
+  padding: 15px 560px 15px 5px;
+}
+.topcontent input{
+  border: none;
+  border-radius: 5px;
+}
+.locationbtn {
+  padding: 15px 50px 15px 50px;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.fa-brands , .fa-phone, .fa-angle-left,.fa-angle-right{
+  color: rgb(255, 136, 0);
+}
+.about{ 
+  clear: both;
+  background-image: linear-gradient(to right, transparent, white, transparent), url('./2nd\ section\ right\ image.png'), url('./2nd\ section\ left.jpg');
+  background-position: left, right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.about section{
+  width: 40%;
+  margin-left: 780px;
+  padding: 100px 0 0 0;
+}
+.about h2, .order h2, .hours h2,.review h2{
+  font-size: 80px;
+  margin: 10px 0 30px 0;
+}
+.about span, .order span , .hours span:first-of-type, .review span:first-of-type{
+  color: rgb(255, 136, 0);
+  font-family: 'Roboto',sans-serif;
+  font-weight: 600;
+}
+.about p{
+  font-family: 'Roboto',sans-serif;
+  line-height: 1.75;
+  text-align: justify;
+}
+.about form{
+  padding-top: 40px;
+}
+.about form input{
+  padding: 15px;
+  border:none;
+  border-radius: 5px;
+} 
+
+.order{
+  padding-top: 100px;
+  background-color: rgb(242, 246, 247);
+  height: 150vh;
+}
+.order h2, .order ul, .hours h2 , .hours h3, .review h2, .review h3,.review p{
+  text-align: center;
+}
+.order span, .hours span, .review span, .review img{
+  display: block;
+  text-align: center;
+}
+.order a{
+  font-size: 20px;
+}
+
+.order li{
+  border-bottom: 1px solid gray;
+}
+.order li:hover{
+  border-bottom: 1px solid rgb(255, 136, 0);
+}
+.order > section{
+  width: 75%;
+  margin-left: 250px;
+}
+.order section section{
+  float: left;
+  width: 25%;
+  padding-top: 30px;
+}
+.order img{
+  width: 20em;
+  height: 30em;
+}
+
+.hours {
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.678), transparent), url('./opening\ hours\ background\ image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 160vh;
+  width: 100%;
+  padding-top: 80px;
+  font-size: 30px;
+}
+.hours span, .schedule h4{
+  font-family: 'Roboto', sans-serif;
+}
+.hours span{
+  padding-top: 20px;
+  font-size: 25px;
+}
+.hours h3{
+  color: rgb(255, 136, 0);
+  font-size: 40px;
+}
+.schedule{
+  width: 100%;
+  float: left;
+
+}
+.schedule section{
+  width: 40%;
+  float: left;
+  padding-left: 420px;
+}
+.schedule span,.schedule h4{
+  margin: 0;
+  text-align: left;
+  font-size: .65em;
+}
+.schedule span:first-of-type{
+  color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+.hours a{
+  font-size: 35px;
+  border: 1px solid rgb(255, 136, 0);
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 925px;  
+}
+.video{
+  width: 100%;
+}
+.video a{
+  padding: 10px 17px 10px 17px;
+  margin: 375px 120px 0 120px;
+  float: left;
+}
+
+.video img{
+  width: 35em;
+  float: left;
+  margin: 20px 131px;
+}
+
+.review{
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.review img{
+  width: 10em;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stars{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+}
+.fa-star{
+  color: rgb(255, 217, 0);
+}
+.review{
+  background: rgb(244, 244, 244);
+}
+.review h3, .review span{
+  font-family: 'Rubik', sans-serif;
+}
+.review h3{
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.review span:last-of-type{
+  font-size: 15px;
+  color: gray;
+}
+.review h2{
+  margin-bottom: 100px;
+}
+.review p {
+  padding: 0 150px 0 150px;
+  line-height: 2;
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
